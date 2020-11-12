@@ -1,0 +1,19 @@
+{
+  "description": "Adds a browser action icon to the toolbar that opens an online metronome site into a new tab.",
+  "manifest_version": 2,
+  "name": "metronome",
+  "version": "1.0",
+  "homepage_url": "https://github.com/Hablapatabla/Metronome-Shortcut",
+
+  "icons": {
+    "48": "icons/metronome_icon.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+      "default_icon": "icons/metronome_icon.png"
+  }
+}
