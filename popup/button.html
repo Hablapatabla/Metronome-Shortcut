@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="button.css"/>
+  </head>
+
+  <body>
+    <form name="form" onsubmit="return redirect()">
+      <fieldset>
+        <legend>Which metronome?</legend>
+        <div<input type="radio" name="selection" value="https://www.musicca.com/metronome" id="Musicca" checked>
+        <label for="Musicca">Musicca</label><br>
+        <input type="radio" name="selection" value="https://www.google.com/search?sxsrf=ALeKk00m3YIHtAL3MUfyRP-C2ca0T51h_Q%3A1605214494154&source=hp&ei=HqGtX6uABYfn_QayxrCQBw&q=metronome&oq=metronome&gs_lcp=CgZwc3ktYWIQAzIICAAQsQMQyQMyBQgAELEDMgUIABCxAzIFCAAQsQMyBQgAELEDMgUIABCxAzICCAAyBQguELEDMgIIADICCAA6BwgjEOoCECc6BwguEOoCECc6BAgjECc6BAguECc6CAguELEDEIMBOgsILhCxAxDHARCjAjoICAAQsQMQgwE6CAguEMcBEKMCOgsILhDHARCjAhCTAjoOCC4QsQMQxwEQowIQkwI6BQgAEMkDOgUIABCSAzoICC4QxwEQrwE6CwgAELEDEIMBEMkDULY7WIFBYMBBaAFwAHgAgAGeAYgBugaSAQM1LjOYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwirh9X98f3sAhWHc98KHTIjDHIQ4dUDCAg&uact=5" id="Google">
+        <label for="Google">Google</label><br>
+        <input type="radio" name="selection" value="https://www.flutetunes.com/metronome/" id="flutetunes">
+        <label for="flutetunes">flutetunes</label><br>
+        <br>
+        <input type="submit" name="submit" value="Get practicing!">
+      </fieldset>
+    </form>
+
+    <script type="text/javascript">
+      function redirect() {
+        var e = document.getElegetElementsByName('selection');
+
+        for(i = 0; i < e.length; i++) {
+          if(ele[i].checked) {
+            console.log("redirecting");
+            browser.tabs.create({
+              "url": ele[i].value;
+            });
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
