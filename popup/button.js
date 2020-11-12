@@ -1,18 +1,21 @@
 
-/*
-Lifted almost entirely from Mozilla's Extension Examples. In particular:
-https://github.com/mdn/webextensions-examples/blob/master/open-my-page-button/background.js
-Open a new tab, and load "my-page.html" into it.
-*/
-function openMyPage() {
-  console.log("injecting");
-   browser.tabs.create({
-     "url": "https://www.musicca.com/metronome"
-   });
-}
+document.addEventListener("click", function(e) {
+  if(!e.target.classList.contains("submit")) {
+    return;
+  }
 
+  var selection = document.getElementsByName('selection');
+  var val;
 
-/*
-Add openMyPage() as a listener to clicks on the browser action.
-*/
-browser.browserAction.onClicked.addListener(openMyPage);
+  for (i = 0; i < selection.length; i++) {
+    if (selection[i].checked) {
+      val = selection[i].value;
+    }
+  }
+
+  browser.tabs.create({
+    url: val
+  });
+
+  close();
+});
