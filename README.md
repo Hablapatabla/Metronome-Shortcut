@@ -1,6 +1,8 @@
 # Metronomio
 ## The Quality-of-Life Extension for Musicians That Nobody Asked for
 
+![Screenshot](https://github.com/Hablapatabla/Metronome-Shortcut/blob/main/icons/metronome_icon.png)
+
 ## What is this?
 
 This Firefox extension offers a few options of sites that provide free metronomes on the web. Users can select their preference and Metronomio will open the page in a new tab in the browser. No more excuses that you can't practice with a metronome because you don't have one - it's just a click away!
