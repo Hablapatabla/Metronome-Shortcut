@@ -1,7 +1,7 @@
 # Metronomio
 ## The Quality-of-Life Extension for Musicians That Nobody Asked for
 
-![Screenshot](https://github.com/Hablapatabla/Metronome-Shortcut/blob/main/icons/metronome_icon.png)
+![Screenshot](https://github.com/Hablapatabla/Metronome-Shortcut/blob/main/icons/awesomebar_screenshot.png)
 
 ## What is this?
 
